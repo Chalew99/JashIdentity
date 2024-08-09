@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Duende.IdentityServer.EntityFramework.Storage</name>
+    </assembly>
+    <members>
+        <member name="T:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions">
+            <summary>
+            Extension methods to add EF database support to IdentityServer.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions.AddConfigurationDbContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions})">
+            <summary>
+            Add Configuration DbContext to the DI system.
+            </summary>
+            <param name="services"></param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions.AddConfigurationDbContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions})">
+            <summary>
+            Add Configuration DbContext to the DI system.
+            </summary>
+            <typeparam name="TContext">The IConfigurationDbContext to use.</typeparam>
+            <param name="services"></param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalDbContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions})">
+            <summary>
+            Adds operational DbContext to the DI system.
+            </summary>
+            <param name="services"></param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalDbContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions})">
+            <summary>
+            Adds operational DbContext to the DI system.
+            </summary>
+            <typeparam name="TContext">The IPersistedGrantDbContext to use.</typeparam>
+            <param name="services"></param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Storage.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalStoreNotification``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds an implementation of the IOperationalStoreNotification to the DI system.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext">
+            <summary>
+            DbContext for the IdentityServer configuration data.
+            </summary>
+            <seealso cref="T:Microsoft.EntityFrameworkCore.DbContext" />
+            <seealso cref="T:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext" />
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext"/> class.
+            </summary>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">storeOptions</exception>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1">
+            <summary>
+            DbContext for the IdentityServer configuration data.
+            </summary>
+            <seealso cref="T:Microsoft.EntityFrameworkCore.DbContext" />
+            <seealso cref="T:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext" />
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.StoreOptions">
+            <summary>
+            The store options.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext"/> class.
+            </summary>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">storeOptions</exception>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.Clients">
+            <summary>
+            Gets or sets the clients.
+            </summary>
+            <value>
+            The clients.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.ClientCorsOrigins">
+            <summary>
+            Gets or sets the clients' CORS origins.
+            </summary>
+            <value>
+            The clients CORS origins.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.IdentityResources">
+            <summary>
+            Gets or sets the identity resources.
+            </summary>
+            <value>
+            The identity resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.ApiResources">
+            <summary>
+            Gets or sets the API resources.
+            </summary>
+            <value>
+            The API resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.ApiScopes">
+            <summary>
+            Gets or sets the API scopes.
+            </summary>
+            <value>
+            The API resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.IdentityProviders">
+            <summary>
+            Gets or sets the identity providers.
+            </summary>
+            <value>
+            The identity providers.
+            </value>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Override this method to further configure the model that was discovered by convention from the entity types
+            exposed in <see cref="T:Microsoft.EntityFrameworkCore.DbSet`1" /> properties on your derived context. The resulting model may be cached
+            and re-used for subsequent instances of your derived context.
+            </summary>
+            <param name="modelBuilder">The builder being used to construct the model for this context. Databases (and other extensions) typically
+            define extension methods on this object that allow you to configure aspects of the model that are specific
+            to a given database.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <remarks>
+            If a model is explicitly set on the options for this context (via <see cref="M:Microsoft.EntityFrameworkCore.DbContextOptionsBuilder.UseModel(Microsoft.EntityFrameworkCore.Metadata.IModel)" />)
+            then this method will not be run.
+            </remarks>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext`1.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext">
+            <summary>
+            DbContext for the IdentityServer operational data.
+            </summary>
+            <seealso cref="T:Microsoft.EntityFrameworkCore.DbContext" />
+            <seealso cref="T:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext" />
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext"/> class.
+            </summary>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">storeOptions</exception>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1">
+            <summary>
+            DbContext for the IdentityServer operational data.
+            </summary>
+            <seealso cref="T:Microsoft.EntityFrameworkCore.DbContext" />
+            <seealso cref="T:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext" />
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.StoreOptions">
+            <summary>
+            The options for this store.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext"/> class.
+            </summary>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">storeOptions</exception>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.PersistedGrants">
+            <inheritdoc/>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.DeviceFlowCodes">
+            <inheritdoc/>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.Keys">
+            <inheritdoc/>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.ServerSideSessions">
+            <inheritdoc/>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.PushedAuthorizationRequests">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.DbContexts.PersistedGrantDbContext`1.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes">
+            <summary>
+            Entity for device flow codes
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.DeviceCode">
+            <summary>
+            Gets or sets the device code.
+            </summary>
+            <value>
+            The device code.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.UserCode">
+            <summary>
+            Gets or sets the user code.
+            </summary>
+            <value>
+            The user code.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.SubjectId">
+            <summary>
+            Gets or sets the subject identifier.
+            </summary>
+            <value>
+            The subject identifier.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.SessionId">
+            <summary>
+            Gets or sets the session identifier.
+            </summary>
+            <value>
+            The session identifier.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>
+            The client identifier.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.Description">
+            <summary>
+            Gets the description the user assigned to the device being authorized.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.CreationTime">
+            <summary>
+            Gets or sets the creation time.
+            </summary>
+            <value>
+            The creation time.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.Expiration">
+            <summary>
+            Gets or sets the expiration.
+            </summary>
+            <value>
+            The expiration.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider">
+            <summary>
+            Models storage for identity providers.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.Id">
+            <summary>
+            Primary key used for EF
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.Scheme">
+            <summary>
+            Scheme name for the provider.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.DisplayName">
+            <summary>
+            Display name for the provider.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.Enabled">
+            <summary>
+            Flag that indicates if the provider should be used.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.Type">
+            <summary>
+            Protocol type of the provider.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Entities.IdentityProvider.Properties">
+            <summary>
+            Serialized value for the identity provider properties dictionary.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Entities.Key">
+            <summary>
+            Models storage for keys.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Extensions.DbContextExtensions">
+            <summary>
+            Extension methods for DbContext
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Extensions.DbContextExtensions.SaveChangesWithConcurrencyCheckAsync``1(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger,System.Threading.CancellationToken)">
+            <summary>
+            Saves changes and handles concurrency exceptions.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Extensions.ModelBuilderExtensions">
+            <summary>
+            Extension methods to define the database schema for the configuration and operational data stores.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Extensions.ModelBuilderExtensions.ConfigureClientContext(Microsoft.EntityFrameworkCore.ModelBuilder,Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions)">
+            <summary>
+            Configures the client context.
+            </summary>
+            <param name="modelBuilder">The model builder.</param>
+            <param name="storeOptions">The store options.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Extensions.ModelBuilderExtensions.ConfigurePersistedGrantContext(Microsoft.EntityFrameworkCore.ModelBuilder,Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions)">
+            <summary>
+            Configures the persisted grant context.
+            </summary>
+            <param name="modelBuilder">The model builder.</param>
+            <param name="storeOptions">The store options.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Extensions.ModelBuilderExtensions.ConfigureResourcesContext(Microsoft.EntityFrameworkCore.ModelBuilder,Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions)">
+            <summary>
+            Configures the resources context.
+            </summary>
+            <param name="modelBuilder">The model builder.</param>
+            <param name="storeOptions">The store options.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Extensions.ModelBuilderExtensions.ConfigureIdentityProviderContext(Microsoft.EntityFrameworkCore.ModelBuilder,Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions)">
+            <summary>
+            Configures the identity providers.
+            </summary>
+            <param name="modelBuilder">The model builder.</param>
+            <param name="storeOptions">The store options.</param>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext">
+            <summary>
+            Abstraction for the configuration context.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.Clients">
+            <summary>
+            Gets or sets the clients.
+            </summary>
+            <value>
+            The clients.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.ClientCorsOrigins">
+            <summary>
+            Gets or sets the clients' CORS origins.
+            </summary>
+            <value>
+            The clients CORS origins.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.IdentityResources">
+            <summary>
+            Gets or sets the identity resources.
+            </summary>
+            <value>
+            The identity resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.ApiResources">
+            <summary>
+            Gets or sets the API resources.
+            </summary>
+            <value>
+            The API resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.ApiScopes">
+            <summary>
+            Gets or sets the scopes.
+            </summary>
+            <value>
+            The identity resources.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext.IdentityProviders">
+            <summary>
+            Gets or sets the identity providers.
+            </summary>
+            <value>
+            The identity providers.
+            </value>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext">
+            <summary>
+            Abstraction for the operational data context.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.PersistedGrants">
+            <summary>
+            Gets or sets the persisted grants.
+            </summary>
+            <value>
+            The persisted grants.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.DeviceFlowCodes">
+            <summary>
+            Gets or sets the device flow codes.
+            </summary>
+            <value>
+            The device flow codes.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.Keys">
+            <summary>
+            Gets or sets the keys.
+            </summary>
+            <value>
+            The keys.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.ServerSideSessions">
+            <summary>
+            Gets or sets the user sessions.
+            </summary>
+            <value>
+            The server side sessions.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.PushedAuthorizationRequests">
+            <summary>
+            Gets or sets the pushed authorization requests.
+            </summary>
+            <value>
+            The pushed authorization requests.
+            </value>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>
+            Saves the changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext.SaveChangesAsync">
+            <summary>
+            Saves the changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.ApiResourceMappers">
+            <summary>
+            Extension methods to map to/from entity/model for API resources.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ApiResourceMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.ApiResource)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ApiResourceMappers.ToEntity(Jash.IdentityServer.Models.ApiResource)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.ClientMappers">
+            <summary>
+            Extension methods to map to/from entity/model for clients.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ClientMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.Client)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ClientMappers.ToEntity(Jash.IdentityServer.Models.Client)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.IdentityProviderMappers">
+            <summary>
+            Extension methods to map to/from entity/model for identity providers.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.IdentityProviderMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.IdentityProvider)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.IdentityProviderMappers.ToEntity(Jash.IdentityServer.Models.IdentityProvider)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.IdentityResourceMappers">
+            <summary>
+            Extension methods to map to/from entity/model for identity resources.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.IdentityResourceMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.IdentityResource)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.IdentityResourceMappers.ToEntity(Jash.IdentityServer.Models.IdentityResource)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.PersistedGrantMappers">
+            <summary>
+            Extension methods to map to/from entity/model for persisted grants.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.PersistedGrantMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.PersistedGrant)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.PersistedGrantMappers.ToEntity(Jash.IdentityServer.Models.PersistedGrant)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.PersistedGrantMappers.UpdateEntity(Jash.IdentityServer.Models.PersistedGrant,Jash.IdentityServer.EntityFramework.Entities.PersistedGrant)">
+            <summary>
+            Updates an entity from a model.
+            </summary>
+            <param name="model">The model.</param>
+            <param name="entity">The entity.</param>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.PushedAuthorizationRequestMappers">
+            <summary>
+            Extension methods to map to/from entity/model for pushed authorization requests.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.PushedAuthorizationRequestMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.PushedAuthorizationRequest)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.PushedAuthorizationRequestMappers.ToEntity(Jash.IdentityServer.Models.PushedAuthorizationRequest)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Mappers.ScopeMappers">
+            <summary>
+            Extension methods to map to/from entity/model for scopes.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ScopeMappers.ToModel(Jash.IdentityServer.EntityFramework.Entities.ApiScope)">
+            <summary>
+            Maps an entity to a model.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Mappers.ScopeMappers.ToEntity(Jash.IdentityServer.Models.ApiScope)">
+            <summary>
+            Maps a model to an entity.
+            </summary>
+            <param name="model">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions">
+            <summary>
+            Options for configuring the configuration context.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ConfigureDbContext">
+            <summary>
+            Callback to configure the EF DbContext.
+            </summary>
+            <value>
+            The configure database context.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ResolveDbContextOptions">
+            <summary>
+            Callback in DI resolve the EF DbContextOptions. If set, ConfigureDbContext will not be used.
+            </summary>
+            <value>
+            The configure database context.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.DefaultSchema">
+            <summary>
+            Gets or sets the default schema.
+            </summary>
+            <value>
+            The default schema.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.IdentityResource">
+            <summary>
+            Gets or sets the identity resource table configuration.
+            </summary>
+            <value>
+            The identity resource.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.IdentityResourceClaim">
+            <summary>
+            Gets or sets the identity claim table configuration.
+            </summary>
+            <value>
+            The identity claim.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.IdentityResourceProperty">
+            <summary>
+            Gets or sets the identity resource property table configuration.
+            </summary>
+            <value>
+            The client property.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiResource">
+            <summary>
+            Gets or sets the API resource table configuration.
+            </summary>
+            <value>
+            The API resource.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiResourceSecret">
+            <summary>
+            Gets or sets the API secret table configuration.
+            </summary>
+            <value>
+            The API secret.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiResourceScope">
+            <summary>
+            Gets or sets the API scope table configuration.
+            </summary>
+            <value>
+            The API scope.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiResourceClaim">
+            <summary>
+            Gets or sets the API claim table configuration.
+            </summary>
+            <value>
+            The API claim.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiResourceProperty">
+            <summary>
+            Gets or sets the API resource property table configuration.
+            </summary>
+            <value>
+            The client property.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.Client">
+            <summary>
+            Gets or sets the client table configuration.
+            </summary>
+            <value>
+            The client.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientGrantType">
+            <summary>
+            Gets or sets the type of the client grant table configuration.
+            </summary>
+            <value>
+            The type of the client grant.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientRedirectUri">
+            <summary>
+            Gets or sets the client redirect URI table configuration.
+            </summary>
+            <value>
+            The client redirect URI.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientPostLogoutRedirectUri">
+            <summary>
+            Gets or sets the client post logout redirect URI table configuration.
+            </summary>
+            <value>
+            The client post logout redirect URI.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientScopes">
+            <summary>
+            Gets or sets the client scopes table configuration.
+            </summary>
+            <value>
+            The client scopes.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientSecret">
+            <summary>
+            Gets or sets the client secret table configuration.
+            </summary>
+            <value>
+            The client secret.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientClaim">
+            <summary>
+            Gets or sets the client claim table configuration.
+            </summary>
+            <value>
+            The client claim.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientIdPRestriction">
+            <summary>
+            Gets or sets the client IdP restriction table configuration.
+            </summary>
+            <value>
+            The client IdP restriction.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientCorsOrigin">
+            <summary>
+            Gets or sets the client cors origin table configuration.
+            </summary>
+            <value>
+            The client cors origin.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ClientProperty">
+            <summary>
+            Gets or sets the client property table configuration.
+            </summary>
+            <value>
+            The client property.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiScope">
+            <summary>
+            Gets or sets the scope table configuration.
+            </summary>
+            <value>
+            The API resource.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiScopeClaim">
+            <summary>
+            Gets or sets the scope claim table configuration.
+            </summary>
+            <value>
+            The API scope claim.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.ApiScopeProperty">
+            <summary>
+            Gets or sets the API resource property table configuration.
+            </summary>
+            <value>
+            The client property.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.IdentityProvider">
+            <summary>
+            Gets or sets the identity providers table configuration.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.EnablePooling">
+            <summary>
+            Gets or set if EF DbContext pooling is enabled.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions.PoolSize">
+            <summary>
+            Gets or set the pool size to use when DbContext pooling is enabled. If not set, the EF default is used.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions">
+            <summary>
+            Options for configuring the operational context.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.ConfigureDbContext">
+            <summary>
+            Callback to configure the EF DbContext.
+            </summary>
+            <value>
+            The configure database context.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.ResolveDbContextOptions">
+            <summary>
+            Callback in DI resolve the EF DbContextOptions. If set, ConfigureDbContext will not be used.
+            </summary>
+            <value>
+            The configure database context.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.DefaultSchema">
+            <summary>
+            Gets or sets the default schema.
+            </summary>
+            <value>
+            The default schema.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.PersistedGrants">
+            <summary>
+            Gets or sets the persisted grants table configuration.
+            </summary>
+            <value>
+            The persisted grants.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.DeviceFlowCodes">
+            <summary>
+            Gets or sets the device flow codes table configuration.
+            </summary>
+            <value>
+            The device flow codes.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.Keys">
+            <summary>
+            Gets or sets the keys table configuration.
+            </summary>
+            <value>
+            The keys.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.ServerSideSessions">
+            <summary>
+            Gets or sets the user sessions table configuration.
+            </summary>
+            <value>
+            The keys.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.PushedAuthorizationRequests">
+            <summary>
+            Gets or sets the pushed authorization requests configuration.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.EnableTokenCleanup">
+            <summary>
+            Gets or sets a value indicating whether stale entries will be automatically cleaned up from the database.
+            This is implemented by periodically connecting to the database (according to the TokenCleanupInterval) from the hosting application.
+            Defaults to false.
+            </summary>
+            <value>
+              <c>true</c> if [enable token cleanup]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.RemoveConsumedTokens">
+            <summary>
+            Gets or sets a value indicating whether consumed tokens will be included in the automatic clean up.
+            </summary>
+            <value>
+              <c>true</c> if consumed tokens are to be included in cleanup; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.ConsumedTokenCleanupDelay">
+            <summary>
+            Gets or sets the consumed token cleanup delay (in seconds). The default
+            is 0. This delay is the amount of time that must elapse before tokens
+            marked as consumed can be deleted. Note that only refresh tokens with
+            OneTimeOnly usage can be marked as consumed.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.TokenCleanupInterval">
+            <summary>
+            Gets or sets the token cleanup interval (in seconds). The default is 3600 (1 hour).
+            </summary>
+            <value>
+            The token cleanup interval.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.FuzzTokenCleanupStart">
+            <summary>
+            If multiple nodes are running the token cleanup at the same time, there will be
+            concurrency issues in the database updates. To reduce the risk, the startup time
+            of the first run can be fuzzed (randomized). The default is <c>true</c>.
+            </summary>
+            <value>
+            <c>true</c> if startup time should be fuzzed, otherwise false.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.TokenCleanupBatchSize">
+            <summary>
+            Gets or sets the number of records to remove at a time. Defaults to 100.
+            </summary>
+            <value>
+            The size of the token cleanup batch.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.EnablePooling">
+            <summary>
+            Gets or set if EF DbContext pooling is enabled.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions.PoolSize">
+            <summary>
+            Gets or set the pool size to use when DbContext pooling is enabled. If not set, the EF default is used.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Options.TableConfiguration">
+            <summary>
+            Class to control a table's name and schema.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Options.TableConfiguration.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Options.TableConfiguration"/> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Options.TableConfiguration.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Options.TableConfiguration"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="schema">The schema.</param>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.TableConfiguration.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Jash.IdentityServer.EntityFramework.Options.TableConfiguration.Schema">
+            <summary>
+            Gets or sets the schema.
+            </summary>
+            <value>
+            The schema.
+            </value>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.ClientStore">
+            <summary>
+            Implementation of IClientStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IClientStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ClientStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ClientStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ClientStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ClientStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.ClientStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.ClientStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ClientStore.FindClientByIdAsync(System.String)">
+            <summary>
+            Finds a client by id
+            </summary>
+            <param name="clientId">The client id</param>
+            <returns>
+            The client
+            </returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore">
+            <summary>
+            Implementation of IDeviceFlowStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IDeviceFlowStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.Serializer">
+            <summary>
+             The serializer.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Jash.IdentityServer.Stores.Serialization.IPersistentGrantSerializer,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="serializer">The serializer</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.StoreDeviceAuthorizationAsync(System.String,System.String,Jash.IdentityServer.Models.DeviceCode)">
+            <summary>
+            Stores the device authorization request.
+            </summary>
+            <param name="deviceCode">The device code.</param>
+            <param name="userCode">The user code.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.FindByUserCodeAsync(System.String)">
+            <summary>
+            Finds device authorization by user code.
+            </summary>
+            <param name="userCode">The user code.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.FindByDeviceCodeAsync(System.String)">
+            <summary>
+            Finds device authorization by device code.
+            </summary>
+            <param name="deviceCode">The device code.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.UpdateByUserCodeAsync(System.String,Jash.IdentityServer.Models.DeviceCode)">
+            <summary>
+            Updates device authorization, searching by user code.
+            </summary>
+            <param name="userCode">The user code.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.RemoveByDeviceCodeAsync(System.String)">
+            <summary>
+            Removes the device authorization, searching by device code.
+            </summary>
+            <param name="deviceCode">The device code.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.ToEntity(Jash.IdentityServer.Models.DeviceCode,System.String,System.String)">
+            <summary>
+            Converts a model to an entity.
+            </summary>
+            <param name="model"></param>
+            <param name="deviceCode"></param>
+            <param name="userCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.DeviceFlowStore.ToModel(System.String)">
+            <summary>
+            Converts a serialized DeviceCode to a model.
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore">
+            <summary>
+            Implementation of IClientStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IClientStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.GetAllSchemeNamesAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.GetBySchemeAsync(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.IdentityProviderStore.MapIdp(Jash.IdentityServer.EntityFramework.Entities.IdentityProvider)">
+            <summary>
+            Maps from the identity provider entity to identity provider model.
+            </summary>
+            <param name="idp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore">
+            <summary>
+            Implementation of IPersistedGrantStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IPersistedGrantStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken service.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.StoreAsync(Jash.IdentityServer.Models.PersistedGrant)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.GetAsync(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.GetAllAsync(Jash.IdentityServer.Stores.PersistedGrantFilter)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.RemoveAsync(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PersistedGrantStore.RemoveAllAsync(Jash.IdentityServer.Stores.PersistedGrantFilter)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore">
+            <inheritdoc />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken service.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.ConsumeByHashAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.GetByHashAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.PushedAuthorizationRequestStore.StoreAsync(Jash.IdentityServer.Models.PushedAuthorizationRequest)">
+            <inheritdoc />
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.ResourceStore">
+            <summary>
+            Implementation of IResourceStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IResourceStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.ResourceStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.ResourceStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.FindApiResourcesByNameAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Finds the API resources by name.
+            </summary>
+            <param name="apiResourceNames">The names.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.FindApiResourcesByScopeNameAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets API resources by scope name.
+            </summary>
+            <param name="scopeNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.FindIdentityResourcesByScopeNameAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets identity resources by scope name.
+            </summary>
+            <param name="scopeNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.FindApiScopesByNameAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets scopes by scope name.
+            </summary>
+            <param name="scopeNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ResourceStore.GetAllResourcesAsync">
+            <summary>
+            Gets all resources.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore">
+            <summary>
+            Implementation of IUserSessionStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.IServerSideSessionStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.CreateSessionAsync(Jash.IdentityServer.Models.ServerSideSession,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.GetSessionAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.UpdateSessionAsync(Jash.IdentityServer.Models.ServerSideSession,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.DeleteSessionAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.GetSessionsAsync(Jash.IdentityServer.Stores.SessionFilter,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.DeleteSessionsAsync(Jash.IdentityServer.Stores.SessionFilter,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.GetAndRemoveExpiredSessionsAsync(System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.QuerySessionsAsync(Jash.IdentityServer.Stores.SessionQuery,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.ServerSideSessionStore.ApplyFilter(System.Linq.IQueryable{Jash.IdentityServer.EntityFramework.Entities.ServerSideSession},Jash.IdentityServer.Stores.SessionQuery)">
+            <summary>
+            Applies the SessionQuery filter. The base implementation filters by
+            DisplayName, sub, and sid, and if more than one criteria exist on the
+            filter, they must all be fulfilled. This method (or an override of it)
+            is not intended to apply pagination.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore">
+            <summary>
+            Implementation of ISigningKeyStore thats uses EF.
+            </summary>
+            <seealso cref="T:Jash.IdentityServer.Stores.ISigningKeyStore" />
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.Context">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.#ctor(Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore},Jash.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.LoadKeysAsync">
+            <summary>
+            Loads all keys from store.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.StoreKeyAsync(Jash.IdentityServer.Models.SerializedKey)">
+            <summary>
+            Persists new key in store.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.Stores.SigningKeyStore.DeleteKeyAsync(System.String)">
+            <summary>
+            Deletes key from storage.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.IOperationalStoreNotification">
+            <summary>
+            Interface to model notifications from the TokenCleanup feature.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.IOperationalStoreNotification.PersistedGrantsRemovedAsync(System.Collections.Generic.IEnumerable{Jash.IdentityServer.EntityFramework.Entities.PersistedGrant},System.Threading.CancellationToken)">
+            <summary>
+            Notification for persisted grants being removed.
+            </summary>
+            <param name="persistedGrants"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.IOperationalStoreNotification.DeviceCodesRemovedAsync(System.Collections.Generic.IEnumerable{Jash.IdentityServer.EntityFramework.Entities.DeviceFlowCodes},System.Threading.CancellationToken)">
+            <summary>
+            Notification for device codes being removed.
+            </summary>
+            <param name="deviceCodes"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.ITokenCleanupService">
+            <summary>
+            Service that cleans up persisted grants and device codes that are no longer
+            needed.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.ITokenCleanupService.CleanupGrantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes expired persisted grants, expired device codes, and optionally
+            consumed persisted grants from the stores.
+            </summary>
+            <param name="cancellationToken">A token that propagates notification
+            that the cleanup operation should be canceled.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.EntityFramework.TokenCleanupService">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.#ctor(Jash.IdentityServer.EntityFramework.Options.OperationalStoreOptions,Jash.IdentityServer.EntityFramework.Interfaces.IPersistedGrantDbContext,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.EntityFramework.TokenCleanupService},Jash.IdentityServer.EntityFramework.IOperationalStoreNotification)">
+            <summary>
+            Constructor for TokenCleanupService.
+            </summary>
+            <param name="options"></param>
+            <param name="persistedGrantDbContext"></param>
+            <param name="operationalStoreNotification"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.CleanupGrantsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.RemoveGrantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes the stale persisted grants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.RemoveExpiredPersistedGrantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes the expired persisted grants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.RemoveConsumedPersistedGrantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes the consumed persisted grants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.RemoveDeviceCodesAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes the stale device codes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jash.IdentityServer.EntityFramework.TokenCleanupService.RemovePushedAuthorizationRequestsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes stale pushed authorization requests.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Tracing">
+            <summary>
+            Constants for tracing
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.BasicActivitySource">
+            <summary>
+            Base ActivitySource
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.StoreActivitySource">
+            <summary>
+            Store ActivitySource
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.CacheActivitySource">
+            <summary>
+            Cache ActivitySource
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.ServiceActivitySource">
+            <summary>
+            Cache ActivitySource
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.ValidationActivitySource">
+            <summary>
+            Detailed validation ActivitySource
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.ServiceVersion">
+            <summary>
+            Service version
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.TraceNames.Basic">
+            <summary>
+            Service name for base traces
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.TraceNames.Store">
+            <summary>
+            Service name for store traces
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.TraceNames.Cache">
+            <summary>
+            Service name for caching traces
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.TraceNames.Services">
+            <summary>
+            Service name for caching traces
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Tracing.TraceNames.Validation">
+            <summary>
+            Service name for detailed validation traces
+            </summary>
+        </member>
+    </members>
+</doc>

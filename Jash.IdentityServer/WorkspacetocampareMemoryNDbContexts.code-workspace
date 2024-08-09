@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../../../Downloads/1_ClientCredentials/1_ClientCredentials/src/IdentityServerQuickStartMemory"
+		},
+		{
+			"path": "../../../identity-aspnetcore/IdentityByExamples/IdentityByExamples"
+		}
+	],
+	"settings": {}
+}

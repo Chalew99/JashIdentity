@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jash.IdentityServer.Configuration.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Jash.IdentityServer.Configuration.ClientConfigurationStore">
+            <summary>
+            Communicates with the client configuration data store using entity
+            framework. 
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.ClientConfigurationStore.DbContext">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.ClientConfigurationStore.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.ClientConfigurationStore.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ClientConfigurationStore.#ctor(Jash.IdentityServer.EntityFramework.DbContexts.ConfigurationDbContext,Jash.IdentityServer.Services.ICancellationTokenProvider,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.Configuration.ClientConfigurationStore})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.Configuration.ClientConfigurationStore"/>
+            class.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ClientConfigurationStore.AddAsync(Jash.IdentityServer.Models.Client)">
+            <inheritdoc />
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.EntityFramework.DefaultCancellationTokenProvider">
+            <summary>
+            Provides cancellation tokens based on the incoming http request
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.EntityFramework.DefaultCancellationTokenProvider.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.EntityFramework.DefaultCancellationTokenProvider.CancellationToken">
+            <summary>
+            Provides access to the cancellation token from the http context
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.EntityFramework.ServiceCollectionExtensions">
+            <summary>
+            Extension methods for adding the entity framework based client configuration
+            store implementation to DI.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.EntityFramework.ServiceCollectionExtensions.AddClientConfigurationStore(Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder)">
+            <summary>
+            Adds the entity framework based client configuration store
+            implementation to DI.
+            </summary>
+        </member>
+    </members>
+</doc>

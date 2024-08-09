@@ -1,0 +1,221 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "IdentityModel/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MinVer/4.3.0": {
+        "type": "package",
+        "build": {
+          "build/MinVer.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MinVer.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IdentityModel/6.2.0": {
+      "sha512": "4AXZ6Tp+DNwrSSeBziiX/231i8ZpD77A9nEMyc68gLSCWG0kgWsIBeFquYcBebiIPkfB7GEXzCYuuLeR1QZJIQ==",
+      "type": "package",
+      "path": "identitymodel/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "identitymodel.6.2.0.nupkg.sha512",
+        "identitymodel.nuspec",
+        "lib/net461/IdentityModel.dll",
+        "lib/net461/IdentityModel.pdb",
+        "lib/net461/IdentityModel.xml",
+        "lib/net472/IdentityModel.dll",
+        "lib/net472/IdentityModel.pdb",
+        "lib/net472/IdentityModel.xml",
+        "lib/net6.0/IdentityModel.dll",
+        "lib/net6.0/IdentityModel.pdb",
+        "lib/net6.0/IdentityModel.xml",
+        "lib/netstandard2.0/IdentityModel.dll",
+        "lib/netstandard2.0/IdentityModel.pdb",
+        "lib/netstandard2.0/IdentityModel.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.3": {
+      "sha512": "ezyYHwDzuxbH4OJFJ5UgHFYXWV4A3Yc+MNMy9xLGcjEH+MzYiOm8o2VXOEDgGy7wW14Y7tfWz3xE1n8wSNv5Pg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/8.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "lib/net462/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
+        "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
+        "microsoft.aspnetcore.dataprotection.abstractions.8.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.dataprotection.abstractions.nuspec"
+      ]
+    },
+    "MinVer/4.3.0": {
+      "sha512": "YNVAW3loCFW4kTwensApaZUl+7xREK75QQNOFSbsbXx2sCSm9/IHBjUHsJGn3u0UA5r/sAqrdYBNUlOFfLhUrA==",
+      "type": "package",
+      "path": "minver/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/MinVer.targets",
+        "buildMultiTargeting/MinVer.targets",
+        "minver.4.3.0.nupkg.sha512",
+        "minver.nuspec",
+        "minver.png",
+        "minver/net6.0/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/net6.0/MinVer",
+        "minver/net6.0/MinVer.Lib.dll",
+        "minver/net6.0/MinVer.deps.json",
+        "minver/net6.0/MinVer.dll",
+        "minver/net6.0/MinVer.runtimeconfig.json",
+        "minver/net6.0/NuGet.Versioning.dll",
+        "minver/net7.0/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/net7.0/MinVer",
+        "minver/net7.0/MinVer.Lib.dll",
+        "minver/net7.0/MinVer.deps.json",
+        "minver/net7.0/MinVer.dll",
+        "minver/net7.0/MinVer.runtimeconfig.json",
+        "minver/net7.0/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/netcoreapp3.1/MinVer",
+        "minver/netcoreapp3.1/MinVer.Lib.dll",
+        "minver/netcoreapp3.1/MinVer.deps.json",
+        "minver/netcoreapp3.1/MinVer.dll",
+        "minver/netcoreapp3.1/MinVer.runtimeconfig.json",
+        "minver/netcoreapp3.1/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/System.ComponentModel.Annotations.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "IdentityModel >= 6.2.0",
+      "Microsoft.AspNetCore.DataProtection.Abstractions >= 8.0.3",
+      "MinVer >= 4.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Storage\\Duende.IdentityServer.Storage.csproj",
+      "projectName": "Duende.IdentityServer.Storage",
+      "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Storage\\Duende.IdentityServer.Storage.csproj",
+      "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Storage\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\NuGet.Config",
+        "C:\\Users\\v-chmeha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "allWarningsAsErrors": true,
+        "noWarn": [
+          "NU5105"
+        ],
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "IdentityModel": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "Microsoft.AspNetCore.DataProtection.Abstractions": {
+            "target": "Package",
+            "version": "[8.0.3, )"
+          },
+          "MinVer": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

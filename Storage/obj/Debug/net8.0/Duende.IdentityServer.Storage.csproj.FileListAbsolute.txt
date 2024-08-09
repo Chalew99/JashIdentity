@@ -1,0 +1,15 @@
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\bin\Debug\net8.0\Duende.IdentityServer.Storage.deps.json
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\bin\Debug\net8.0\Duende.IdentityServer.Storage.dll
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\bin\Debug\net8.0\Duende.IdentityServer.Storage.pdb
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\bin\Debug\net8.0\Duende.IdentityServer.Storage.xml
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.csproj.AssemblyReference.cache
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.AssemblyInfoInputs.cache
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.AssemblyInfo.cs
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.csproj.CoreCompileInputs.cache
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.sourcelink.json
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.dll
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\refint\Duende.IdentityServer.Storage.dll
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.xml
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\Duende.IdentityServer.Storage.pdb
+C:\Users\v-chmeha\source\repos\Authentication\OuthAuthentication_adrey\IdentityServer\src\Storage\obj\Debug\net8.0\ref\Duende.IdentityServer.Storage.dll

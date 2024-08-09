@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj",
+        "projectName": "Jash.IdentityServer.Storage",
+        "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj",
+        "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\NuGet.Config",
+          "C:\\Users\\v-chmeha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "IdentityModel": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.AspNetCore.DataProtection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "MinVer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

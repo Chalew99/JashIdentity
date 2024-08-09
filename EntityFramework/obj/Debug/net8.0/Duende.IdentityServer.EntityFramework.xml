@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Duende.IdentityServer.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions">
+            <summary>
+            Extension methods to add EF database support to IdentityServer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddConfigurationStore(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder,System.Action{Duende.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions})">
+            <summary>
+            Configures EF implementation of IClientStore, IResourceStore, and ICorsPolicyService with IdentityServer.
+            </summary>
+            <param name="builder">The builder.</param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddConfigurationStore``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder,System.Action{Duende.IdentityServer.EntityFramework.Options.ConfigurationStoreOptions})">
+            <summary>
+            Configures EF implementation of IClientStore, IResourceStore, and ICorsPolicyService with IdentityServer.
+            </summary>
+            <typeparam name="TContext">The IConfigurationDbContext to use.</typeparam>
+            <param name="builder">The builder.</param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddConfigurationStoreCache(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)">
+            <summary>
+            Configures caching for IClientStore, IResourceStore, and ICorsPolicyService with IdentityServer.
+            </summary>
+            <param name="builder">The builder.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalStore(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder,System.Action{Duende.IdentityServer.EntityFramework.Options.OperationalStoreOptions})">
+            <summary>
+            Configures EF implementation of IPersistedGrantStore with IdentityServer.
+            </summary>
+            <param name="builder">The builder.</param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalStore``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder,System.Action{Duende.IdentityServer.EntityFramework.Options.OperationalStoreOptions})">
+            <summary>
+            Configures EF implementation of IPersistedGrantStore with IdentityServer.
+            </summary>
+            <typeparam name="TContext">The IPersistedGrantDbContext to use.</typeparam>
+            <param name="builder">The builder.</param>
+            <param name="storeOptionsAction">The store options action.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerEntityFrameworkBuilderExtensions.AddOperationalStoreNotification``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)">
+            <summary>
+            Adds an implementation of the IOperationalStoreNotification to IdentityServer.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.TokenCleanupHost">
+            <summary>
+            Helper to cleanup expired persisted grants.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TokenCleanupHost.#ctor(System.IServiceProvider,Duende.IdentityServer.EntityFramework.Options.OperationalStoreOptions,Microsoft.Extensions.Logging.ILogger{Microsoft.Extensions.DependencyInjection.TokenCleanupHost})">
+            <summary>
+            Constructor for TokenCleanupHost.
+            </summary>
+            <param name="serviceProvider"></param>
+            <param name="options"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TokenCleanupHost.StartAsync(System.Threading.CancellationToken)">
+            <summary>
+            Starts the token cleanup polling.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TokenCleanupHost.StopAsync(System.Threading.CancellationToken)">
+            <summary>
+            Stops the token cleanup polling.
+            </summary>
+        </member>
+        <member name="T:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService">
+            <summary>
+            Implementation of ICorsPolicyService that consults the client configuration in the database for allowed CORS origins.
+            </summary>
+            <seealso cref="T:Duende.IdentityServer.Services.ICorsPolicyService" />
+        </member>
+        <member name="F:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService.DbContext">
+            <summary>
+            The DbContext.
+            </summary>
+        </member>
+        <member name="F:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService.CancellationTokenProvider">
+            <summary>
+            The CancellationToken provider.
+            </summary>
+        </member>
+        <member name="F:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService.#ctor(Duende.IdentityServer.EntityFramework.Interfaces.IConfigurationDbContext,Microsoft.Extensions.Logging.ILogger{Duende.IdentityServer.EntityFramework.Services.CorsPolicyService},Duende.IdentityServer.Services.ICancellationTokenProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService"/> class.
+            </summary>
+            <param name="dbContext">The DbContext</param>
+            <param name="logger">The logger.</param>
+            <param name="cancellationTokenProvider"></param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="M:Duende.IdentityServer.EntityFramework.Services.CorsPolicyService.IsOriginAllowedAsync(System.String)">
+            <summary>
+            Determines whether origin is allowed.
+            </summary>
+            <param name="origin">The origin.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

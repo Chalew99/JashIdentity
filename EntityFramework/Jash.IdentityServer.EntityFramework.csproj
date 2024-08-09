@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>Jash.IdentityServer.EntityFramework</PackageId>
+        <TargetFramework>net8.0</TargetFramework>
+
+        <Description>EntityFramework persistence layer for Jash IdentityServer</Description>
+        <AssemblyName>Jash.IdentityServer.EntityFramework</AssemblyName>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\EntityFramework.Storage\Jash.IdentityServer.EntityFramework.Storage.csproj" />
+        <ProjectReference Include="..\Jash.IdentityServer\Jash.IdentityServer.csproj" />
+    </ItemGroup>
+</Project>

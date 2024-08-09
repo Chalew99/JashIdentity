@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F34D64E-ECBE-4585-A098-497DC0F3D79D}|..\\Configuration.EntityFramework\\Duende.IdentityServer.Configuration.EntityFramework.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\configuration.entityframework\\clientconfigurationstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D5663-9B4D-41CF-AB42-6EFC0F1BC63C}|..\\Configuration\\Duende.IdentityServer.Configuration.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\configuration\\endpoints\\dynamicclientregistrationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1BD46E-8C39-4132-AF59-1A04CCD03B66}|..\\EndpointSample\\EndpointSample.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\endpointsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1BD46E-8C39-4132-AF59-1A04CCD03B66}|..\\EndpointSample\\EndpointSample.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\endpointsample\\endpointsample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{799C56CB-5ED0-44CA-8B16-36CB1398598B}|..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj|c:\\users\\v-chmeha\\downloads\\source\\configurationdebugviewendpoint\\endpointroutebuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D36680-E8C1-42B9-A0BE-1F0661128A25}|..\\JashAuthSample\\JashAuthSample.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\jashauthsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D36680-E8C1-42B9-A0BE-1F0661128A25}|..\\JashAuthSample\\JashAuthSample.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\jashauthsample\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D36680-E8C1-42B9-A0BE-1F0661128A25}|..\\JashAuthSample\\JashAuthSample.csproj|c:\\users\\v-chmeha\\source\\repos\\authentication\\outhauthentication_adrey\\identityserver\\src\\jashauthsample\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{799C56CB-5ED0-44CA-8B16-36CB1398598B}|..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj|c:\\users\\v-chmeha\\downloads\\source\\configurationdebugviewendpoint\\configurationdebugviewmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{799C56CB-5ED0-44CA-8B16-36CB1398598B}|..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj|c:\\users\\v-chmeha\\downloads\\source\\configurationdebugviewendpoint\\configurationdebugviewoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{799C56CB-5ED0-44CA-8B16-36CB1398598B}|..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj|c:\\users\\v-chmeha\\downloads\\source\\configurationdebugviewendpoint\\configurationdebugviewendpoint.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 300,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientConfigurationStore.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
+              "RelativeDocumentMoniker": "..\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
+              "RelativeToolTip": "..\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T15:10:09.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DynamicClientRegistrationEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
+              "RelativeDocumentMoniker": "..\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
+              "RelativeToolTip": "..\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T15:07:12.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EndpointSample.csproj",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\EndpointSample.csproj",
+              "RelativeDocumentMoniker": "..\\EndpointSample\\EndpointSample.csproj",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\EndpointSample.csproj",
+              "RelativeToolTip": "..\\EndpointSample\\EndpointSample.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-31T23:34:40.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\Program.cs",
+              "RelativeDocumentMoniker": "..\\EndpointSample\\Program.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\Program.cs",
+              "RelativeToolTip": "..\\EndpointSample\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T22:57:29.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Config.cs",
+              "RelativeDocumentMoniker": "..\\JashAuthSample\\Config.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Config.cs",
+              "RelativeToolTip": "..\\JashAuthSample\\Config.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvxwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:49:41.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HostingExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\HostingExtensions.cs",
+              "RelativeDocumentMoniker": "..\\JashAuthSample\\HostingExtensions.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\HostingExtensions.cs",
+              "RelativeToolTip": "..\\JashAuthSample\\HostingExtensions.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAADwvyMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:48:59.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Program.cs",
+              "RelativeDocumentMoniker": "..\\JashAuthSample\\Program.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Program.cs",
+              "RelativeToolTip": "..\\JashAuthSample\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBMwAwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:48:35.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigurationDebugViewMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIA6wBAAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:19:29.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfigurationDebugViewOptions.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:17:37.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EndpointRouteBuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAzwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:15:41.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConfigurationDebugViewEndpoint.csproj",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
+              "ToolTip": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-31T05:15:28.138Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

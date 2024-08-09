@@ -1,0 +1,1121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jash.IdentityServer.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Jash.IdentityServer.Configuration.Configuration.DynamicClientRegistrationOptions">
+            <summary>
+            Options for dynamic client registration.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Configuration.DynamicClientRegistrationOptions.SecretLifetime">
+            <summary>
+            Gets or sets the lifetime of secrets generated for clients. If unset,
+            generated secrets will have no expiration. Defaults to null (secrets
+            never expire).
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Configuration.IdentityServerConfigurationOptions">
+            <summary>
+            Top level options for IdentityServer.Configuration.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Configuration.IdentityServerConfigurationOptions.LicenseKey">
+            <summary>
+            Gets or Sets the license key. Typically, this is the same license key as
+            used by IdentityServer.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Configuration.IdentityServerConfigurationOptions.DynamicClientRegistration">
+            <summary>
+            Options for Dynamic Client Registration
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors">
+            <summary>
+            Error codes defined by RFC 7591
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors.InvalidRedirectUri">
+            <summary>
+            The value of one or more redirection URIs is invalid.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors.InvalidClientMetadata">
+            <summary>
+            The value of one of the client metadata fields is invalid and the
+            server has rejected this request.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors.InvalidSoftwareStatement">
+            <summary>
+            The software statement presented is invalid.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors.UnapprovedSoftwareStatement">
+            <summary>
+            The software statement presented is not approved for use by this
+            authorization server.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.DynamicClientRegistrationEndpoint">
+            <summary>
+            The dynamic client registration endpoint
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.DynamicClientRegistrationEndpoint.#ctor(Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.IDynamicClientRegistrationValidator,Jash.IdentityServer.Configuration.RequestProcessing.IDynamicClientRegistrationRequestProcessor,Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator,Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.Configuration.DynamicClientRegistrationEndpoint})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.Configuration.DynamicClientRegistrationEndpoint" /> class.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.DynamicClientRegistrationEndpoint.Process(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Processes requests to the dynamic client registration endpoint
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ConfigurationEndpointExtensions">
+            <summary>
+            Extension methods for adding IdentityServer configuration endpoints.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ConfigurationEndpointExtensions.MapDynamicClientRegistration(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String)">
+            <summary>
+            Maps the dynamic client registration endpoint.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder">
+            <summary>
+            Builder class for setting up services for IdentityServer.Configuration. 
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder"/> class.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder.Services">
+            <summary>
+            Gets the service collection.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ConfigurationServiceCollectionExtensions">
+            <summary>
+            Extension methods for adding IdentityServer.Configuration services.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ConfigurationServiceCollectionExtensions.AddIdentityServerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Jash.IdentityServer.Configuration.Configuration.IdentityServerConfigurationOptions})">
+            <summary>
+            Adds IdentityServer.Configuration services with configuration options
+            specified by a lambda.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ConfigurationServiceCollectionExtensions.AddIdentityServerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adds IdentityServer.Configuration services with configuration options
+            specified by an <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" />.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ServiceCollectionExtensions">
+            <summary>
+            Extension methods for adding the entity framework based client configuration
+            store implementation to DI.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ServiceCollectionExtensions.AddInMemoryClientConfigurationStore(Jash.IdentityServer.Configuration.IdentityServerConfigurationBuilder)">
+            <summary>
+            Adds the in memory client configuration store to DI. 
+            </summary>
+            <remark>
+            This is for testing and demos only.
+            </remark>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ConfigurationLicense">
+            <summary>
+            Models the license for IdentityServer.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ConfigurationLicense.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.ConfigurationLicense.ConfigApiFeature">
+            <summary>
+            The Configuration API.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError">
+            <summary>
+            Represents an error during dynamic client registration.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError"/> class.
+            </summary>
+            <param name="error">The error code for the error that occurred. Error
+            codes defined by RFC 7591 are defined as constants in the <see
+            cref="T:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors" /> class.</param>
+            <param name="errorDescription">A human-readable description of the error
+            that occurred during validation or processing.</param>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError.Error">
+            <summary>
+            Gets or sets the error code for the error that occurred. Error codes
+            defined by RFC 7591 are defined as constants in the <see
+            cref="T:Jash.IdentityServer.Configuration.DynamicClientRegistrationErrors" /> class.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError.ErrorDescription">
+            <summary>
+            Gets or sets a human-readable description of the error that occurred.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext">
+            <summary>
+            Represents the context for a dynamic client registration request, including
+            the original DCR request, the client model that is built up through
+            validation and processing, the caller who made the DCR request, and other
+            contextual information.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext.#ctor(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest,System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext"/> class.
+            </summary>
+            <param name="request">The original dynamic client registration request.</param>
+            <param name="caller">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> that made the DCR request.</param>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext.Client">
+            <summary>
+            The client model that is built up through validation and processing.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext.Request">
+            <summary>
+            The original dynamic client registration request.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext.Caller">
+            <summary>
+            The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> that made the DCR request.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext.Items">
+            <summary>
+            A collection where additional contextual information may be stored. This
+            is intended as a place to pass additional custom state between
+            validation steps.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest">
+            <summary>
+            Represents a dynamic client registration request. The parameters that are
+            supported include a subset of the parameters defined by IANA
+            (https://www.iana.org/assignments/oauth-parameters/oauth-parameters.xhtml#client-metadata),
+            and custom properties needed by IdentityServer.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RedirectUris">
+            <summary>
+            List of redirection URI strings for use in redirect-based flows such as the authorization code flows.
+            </summary>
+            <remarks>
+            Clients using flows with redirection must register their redirection URI values.
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.GrantTypes">
+            <summary>
+            List of OAuth 2.0 grant type strings that the client can use at the token endpoint.
+            </summary>
+            <remarks>
+            Valid values are "authorization_code", "client_credentials", "refresh_token".
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.ClientName">
+            <summary>
+            Human-readable string name of the client to be presented to the end-user during authorization.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.LogoUri">
+            <summary>
+            Logo for the client.
+            </summary>
+            <remarks>
+            If present, the server should display this image to the end-user during approval.
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.ClientUri">
+            <summary>
+            Web page providing information about the client.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.JwksUri">
+            <summary>
+            URL to a JWK Set document which contains the client's public keys.
+            </summary>
+            <remarks>
+            <remark>
+            The default configuration endpoints do not use the jwks uri.
+            It is included in this model to facilitate extensions to the
+            configuration system.
+            </remark>
+            <remark>
+            The <see cref="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.JwksUri"/> and <see cref="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.Jwks"/> parameters MUST NOT both be present in
+            the same request or response.
+            </remark>
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.Jwks">
+            <summary>
+            JWK Set document which contains the client's public keys.
+            </summary>
+            <remark>
+            The <see cref="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.JwksUri"/> and <see cref="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.Jwks"/> parameters MUST NOT both be present in
+            the same request or response.
+            </remark>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.Scope">
+            <summary>
+            String containing a space-separated list of scope values that the client
+            can use when requesting access tokens.
+            </summary>
+            <remarks>
+            If omitted, the configuration API will register a client with the scopes
+            set by the <see
+            cref="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetDefaultScopes(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)"
+            /> method, which defaults to no scopes
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.PostLogoutRedirectUris">
+            <summary>
+            List of post-logout redirection URIs for use in the end session
+            endpoint.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.FrontChannelLogoutUri">
+            <summary>
+            RP URL that will cause the RP to log itself out when rendered in an
+            iframe by the OP.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.FrontChannelLogoutSessionRequired">
+            <summary>
+            Boolean value specifying whether the RP requires that a sid (session ID)
+            query parameter be included to identify the RP session with the OP when
+            the frontchannel_logout_uri is used.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.BackChannelLogoutUri">
+            <summary>
+            RP URL that will cause the RP to log itself out when sent a Logout Token
+            by the OP.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.BackChannelLogoutSessionRequired">
+            <summary>
+            Boolean value specifying whether the RP requires that a sid (session ID)
+            Claim be included in the Logout Token to identify the RP session with
+            the OP when the backchannel_logout_uri is used.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.SoftwareStatement">
+            <summary>
+            A software statement containing client metadata values about the client
+            software as claims.  This is a string value containing the entire signed
+            JWT.
+            </summary>
+            <remark>
+            The default configuration endpoints do not use the software statement.
+            It is included in this model to facilitate extensions to the
+            configuration system.
+            </remark>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.SoftwareId">
+            <summary>
+            A unique identifier string (e.g., a Universally Unique Identifier
+            (UUID)) assigned by the client developer or software publisher used by
+            registration endpoints to identify the client software to be dynamically
+            registered.  Unlike "client_id", which is issued by the authorization
+            server and SHOULD vary between instances, the "software_id" SHOULD
+            remain the same for all instances of the client software.  The
+            "software_id" SHOULD remain the same across multiple updates or versions
+            of the same piece of software.  The value of this field is not intended
+            to be human readable and is usually opaque to the client and
+            authorization server.
+            </summary>
+            <remark>
+            The default configuration endpoints do not use the software id.
+            It is included in this model to facilitate extensions to the
+            configuration system.
+            </remark>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.SoftwareVersion">
+            <summary>
+            A version identifier string for the client software identified by
+            "software_id".  The value of the "software_version" SHOULD change on any
+            update to the client software identified by the same "software_id".  The
+            value of this field is intended to be compared using string equality
+            matching and no other comparison semantics are defined by this
+            specification.  The value of this field is outside the scope of this
+            specification, but it is not intended to be human readable and is
+            usually opaque to the client and authorization server.  The definition
+            of what constitutes an update to client software that would trigger a
+            change to this value is specific to the software itself and is outside
+            the scope of this specification.
+            </summary>
+            <remark> The default configuration endpoints do not use the software
+            version. It is included in this model to facilitate extensions to the
+            configuration system. </remark>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RequireSignedRequestObject">
+            <summary>
+            Boolean value specifying whether authorization requests must be
+            protected as signed request objects and provided through either the
+            request or request_uri parameters.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.TokenEndpointAuthenticationMethod">
+            <summary>
+            Requested Client Authentication method for the Token Endpoint. The
+            supported options are client_secret_post, client_secret_basic,
+            client_secret_jwt, private_key_jwt.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.DefaultMaxAge">
+            <summary>
+            Default maximum authentication age. 
+            </summary>
+            <remarks>
+            This is stored as the UserSsoLifetime property of the client.
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.InitiateLoginUri">
+            <summary>
+            URI using the https scheme that a third party can use to initiate a
+            login by the relying party.
+            </summary>
+            <remarks>
+            The URI must accept requests via both GET and POST. The client must
+            understand the <c>login_hint</c> and iss parameters and should support
+            the <c>target_link_uri</c> parameter.
+            </remarks>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.IdentityTokenLifetime">
+            <summary>
+            The lifetime of identity tokens, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AccessTokenLifetime">
+            <summary>
+            The lifetime of access tokens, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AuthorizationCodeLifetime">
+            <summary>
+            The lifetime of authorization codes, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AbsoluteRefreshTokenLifetime">
+            <summary>
+            The absolute lifetime of refresh tokens, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.SlidingRefreshTokenLifetime">
+            <summary>
+            The sliding lifetime of refresh tokens, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RefreshTokenExpiration">
+            <summary>
+            The type of expiration for refresh tokens. Either "sliding" or
+            "absolute".
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RefreshTokenUsage">
+            <summary>
+            The usage type for refresh tokens. Either "OneTimeOnly" or "ReUse".
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.UpdateAccessTokenClaimsOnRefresh">
+            <summary>
+            Boolean value specifying whether access token claims are updated during 
+            token refresh.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RequireConsent">
+            <summary>
+            Boolean value specifying whether consent is required in user-centric
+            flows initiated by this client.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AllowRememberConsent">
+            <summary>
+            Boolean value specifying whether a user's consent can be remembered in
+            flows initiated by this client.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.ConsentLifetime">
+            <summary>
+            The lifetime of consent, in seconds.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AccessTokenType">
+            <summary>
+            The type of access tokens that this client will create. Either "Jwt" or
+            "Reference".
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AllowedCorsOrigins">
+            <summary>
+            List of allowed CORS origins for JavaScript clients.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.RequireClientSecret">
+            <summary>
+            Boolean value specifying if a client secret is needed to request tokens
+            at the token endpoint.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.EnableLocalLogin">
+            <summary>
+            Boolean value specifying if local logins are enabled when this client
+            uses interactive flows.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.IdentityProviderRestrictions">
+            <summary>
+            List of external IdPs that can be used with this client. If list is
+            empty all IdPs are allowed. Defaults to empty.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.CoordinateLifetimeWithUserSession">
+            <summary>
+            When enabled, the client's token lifetimes (e.g. refresh tokens) will be
+            tied to the user's session lifetime. This means when the user logs out,
+            any revokable tokens will be removed. If using server-side sessions,
+            expired sessions will also remove any revokable tokens, and backchannel
+            logout will be triggered. This client's setting overrides the global
+            CoordinateTokensWithUserSession configuration setting.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.AllowedIdentityTokenSigningAlgorithms">
+            <summary>
+            List of signing algorithms to use when signing identity tokens. If not set, will use the server default signing algorithm.
+            This property is an extension to the Dynamic Client Registration Protocol.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest.Extensions">
+            <summary>
+            Custom client metadata fields to include in the serialization.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse">
+            <summary>
+            Represents the response to a successful dynamic client registration request.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse"/> class.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.#ctor(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationRequest,Jash.IdentityServer.Models.Client)">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse"/> class copying properties from
+            the specified request and client. This tries to copy from the client's
+            properties, and only uses the request if it must. Doing so means that the 
+            response will better reflect the actually created client record.
+            </summary>
+            <param name="request">The request used to initialize the
+            response.</param>
+            <param name="client">The client used to initialize the response.</param>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.ClientId">
+            <summary>
+            Gets or sets the client ID.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.ClientSecret">
+            <summary>
+            Gets or sets the client secret.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.ClientSecretExpiresAt">
+            <summary>
+            Gets or sets the expiration time of the client secret.
+            </summary>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse.ResponseTypes">
+            <summary>
+            List of the OAuth 2.0 response type strings that the client can use at
+            the authorization endpoint.
+            </summary>
+            <remarks>
+            This will either be ["code"], when using the authorization code grant,
+            or omitted from the response when not using authorization code grant.
+            Other grants, such as the implicit or hybrid grants, that would allow
+            the use of other values are not supported.
+            </remarks>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.IDynamicClientRegistrationResponse">
+            <summary>
+            Marker interface for the response to a dynamic client registration request.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.KeySet">
+            <summary>
+            Represents a JSON Web Key Set.
+            </summary>
+            <remark>
+            The keys themselves are represented as objects without additional structure,
+            rather than more complex types, such as 
+            <seealso cref="T:IdentityModel.Jwk.JsonWebKey" />, because we don't want
+            serializing and deserializing to and from such types to introduce additional
+            properties to the keys.
+            </remark>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.KeySet.#ctor(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Represents a JSON Web Key Set.
+            </summary>
+            <remark>
+            The keys themselves are represented as objects without additional structure,
+            rather than more complex types, such as 
+            <seealso cref="T:IdentityModel.Jwk.JsonWebKey" />, because we don't want
+            serializing and deserializing to and from such types to introduce additional
+            properties to the keys.
+            </remark>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.IStepResult">
+            <summary>
+            Represents the result of a step in dynamic client registration validation or
+            processing.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.StepResult">
+            <summary>
+            Static helper class for creating instances of IStepResult implementations,
+            wrapped in tasks.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.StepResult.Failure(System.String,System.String)">
+            <summary>
+            Creates a step result that represents failure, wrapped in a task.
+            </summary>
+            <param name="errorDescription"></param>
+            <param name="error"></param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Models.StepResult.Success">
+            <summary>
+            Creates a step result that represents success, wrapped in a task.
+            </summary>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Models.SuccessfulStep">
+            <summary>
+            Represents a successful validation or processing step.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor">
+            <inheritdoc />
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.Options">
+            <summary>
+            The options.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.Store">
+            <summary>
+            The client configuration store.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.#ctor(Jash.IdentityServer.Configuration.Configuration.IdentityServerConfigurationOptions,Jash.IdentityServer.Configuration.IClientConfigurationStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor"/> class.
+            </summary>
+            <param name="options">The IdentityServer.Configuration options.</param>
+            <param name="store">The client configuration store.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.ProcessAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.AddClientSecret(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Adds a client secret to a dynamic client registration request.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model, the DCR request, and other contextual
+            information.</param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+            <remark> This method must set the "secret" and "plainText" properties of
+            the context's Items dictionary.</remark>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.GenerateSecret(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Generates a secret for a dynamic client registration request.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model, the DCR request, and other contextual
+            information.</param>
+            <returns>A task that returns a tuple containing the generated secret and
+            the plaintext of that secret.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.DynamicClientRegistrationRequestProcessor.AddClientId(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Generates a client ID and adds it to the validatedRequest's client
+            model.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model, the DCR request, and other contextual
+            information.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.RequestProcessing.IDynamicClientRegistrationRequestProcessor">
+            <summary>
+            Processes valid client registration requests.
+            </summary>
+            <remarks> The request processor is responsible for setting properties of the
+            client that are not specified in the dynamic client registration request,
+            such as the client id and possibly the client secret (when the client secret
+            is not specified as a jwk in the request), and for storing the new client to
+            the <see cref="T:Jash.IdentityServer.Configuration.IClientConfigurationStore"/>.
+            </remarks>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.RequestProcessing.IDynamicClientRegistrationRequestProcessor.ProcessAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Processes a valid dynamic client registration request, setting
+            properties of the client that are not specified in the request, and
+            storing the new client in the <see cref="T:Jash.IdentityServer.Configuration.IClientConfigurationStore"/>.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator">
+            <inheritdoc/>
+        </member>
+        <member name="P:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.SerializerOptions">
+            <summary>
+            The options used for serializing json in responses.
+            </summary>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.#ctor(Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.WriteResponse``1(Microsoft.AspNetCore.Http.HttpContext,System.Int32,``0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.WriteContentTypeError(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.WriteBadRequestError(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.WriteError(Microsoft.AspNetCore.Http.HttpContext,Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.DynamicClientRegistrationResponseGenerator.WriteSuccessResponse(Microsoft.AspNetCore.Http.HttpContext,Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator">
+            <summary>
+            Generates dynamic client registration responses.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator.WriteResponse``1(Microsoft.AspNetCore.Http.HttpContext,System.Int32,``0)">
+            <summary>
+            Writes a response object to the HTTP context with the given status code.
+            </summary>
+            <typeparam name="T">The type of the response object that implements the <see cref="T:Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.IDynamicClientRegistrationResponse"/> interface.</typeparam>
+            <param name="context">The HTTP context to write the response to.</param>
+            <param name="statusCode">The status code to set in the response.</param>
+            <param name="response">The response object to write to the response.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator.WriteContentTypeError(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Writes a content type error to the HTTP response.
+            </summary>
+            <param name="response">The HTTP context to write the error to.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator.WriteBadRequestError(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Writes a bad request error to the HTTP context.
+            </summary>
+            <param name="context">The HTTP context to write the error to.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator.WriteSuccessResponse(Microsoft.AspNetCore.Http.HttpContext,Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationResponse)">
+            <summary>
+            Writes a success response to the HTTP context.
+            </summary>
+            <param name="context">The HTTP context to write the response to.</param>
+            <param name="response">The dynamic client registration response.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.ResponseGeneration.IDynamicClientRegistrationResponseGenerator.WriteError(Microsoft.AspNetCore.Http.HttpContext,Jash.IdentityServer.Configuration.Models.DynamicClientRegistrationError)">
+            <summary>
+            Writes a validation or processing step's error to the HTTP context.
+            </summary>
+            <param name="context">The HTTP context to write the error to.</param>
+            <param name="error">The dynamic client registration validation error.</param>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.IClientConfigurationStore">
+            <summary>
+            Interface for communication with the client configuration data store.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.IClientConfigurationStore.AddAsync(Jash.IdentityServer.Models.Client)">
+            <summary>
+            Adds a client to the configuration store.
+            </summary>
+            <param name="client">The client to add to the store</param>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.InMemoryClientConfigurationStore">
+            <summary>
+            In-Memory implementation of the client configuration store.
+            </summary>
+            <remark> This implementation of the store is intended for demos and tests,
+            but is almost certainly inappropriate for production use, as the dynamically
+            registered clients are not actually persisted anywhere outside memory.
+            </remark>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.InMemoryClientConfigurationStore.#ctor(System.Collections.Generic.ICollection{Jash.IdentityServer.Models.Client})">
+            <summary>
+            Instantiates a new instance of the InMemoryClientConfigurationStore.
+            </summary>
+            <param name="clients">The in memory clients, which must be originally
+            registered in the DI system as an ICollection.</param>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.InMemoryClientConfigurationStore.AddAsync(Jash.IdentityServer.Models.Client)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidatedRequest">
+            <summary>
+            Represents a successfully validated dynamic client registration request.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator">
+            <inheritdoc/>
+        </member>
+        <member name="F:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.Logger">
+            <summary>
+            The logger.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.#ctor(Microsoft.Extensions.Logging.ILogger{Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator"/> class.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.ValidateAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetGrantTypesAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates requested grant types and uses them to set the allowed grant
+            types of the client.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its allowed grant types set,
+            the DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetRedirectUrisAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates requested redirect uris and uses them to set the redirect uris
+            of the client.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its redirect uri set, the DCR
+            request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetScopesAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates requested scopes and uses them to set the scopes of the
+            client.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its scopes set, the DCR
+            request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetDefaultScopes(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Sets scopes on the client when no scopes are requested. The default
+            implementation sets no scopes and is intended as an extension point.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its scopes set, the DCR
+            request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetSecretsAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested jwks to set the secrets of the client.  
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its secrets set, the DCR
+            request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetClientNameAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client name and uses it to set the name of the
+            client.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its name set, the DCR request,
+            and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetLogoutParametersAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client parameters related to logout and uses
+            them to set the corresponding properties in the client. Those parameters
+            include the post logout redirect uris, front channel and back channel
+            uris, and flags for the front and back channel uris indicating if they
+            require session ids.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its logout parameters set, the
+            DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetMaxAgeAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested default max age and uses it to set the user sso
+            lifetime of the client.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its max age set, the DCR
+            request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.ValidateSoftwareStatementAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the software statement of the request. The default
+            implementation does nothing, and is included as an extension point.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that is being built up, the DCR request, and
+            other contextual information.</param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetPublicClientProperties(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client parameters related to public clients and
+            uses them to set the corresponding properties in the client. Those
+            parameters include the require client secret flag and the allowed cors
+            origins.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its public client properties
+            set, the DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetAccessTokenProperties(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client parameters related to access tokens and
+            uses them to set the corresponding properties in the client. Those
+            parameters include the allowed access token type and access token
+            lifetime.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its access token properties
+            set, the DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetIdTokenProperties(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client parameters related to id tokens and uses
+            them to set the corresponding properties in the client. Those parameters
+            include the id token lifetime and the allowed id token signing
+            algorithms.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its id token properties set,
+            the DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetServerSideSessionProperties(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates the requested client parameters related to server side
+            sessions and uses them to set the corresponding properties in the
+            client. Those parameters include the coordinate lifetime with user
+            session flag.
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have its server side session
+            properties set, the DCR request, and other contextual information.
+            </param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.DynamicClientRegistrationValidator.SetUserInterfaceProperties(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates details of the request that control the user interface,
+            including the logo uri, client uri, initiate login uri, enable local
+            login flag, and identity provider restrictions, and uses them to set the
+            corresponding client properties. 
+            </summary>
+            <param name="context">The dynamic client registration context, which
+            includes the client model that will have miscellaneous properties set,
+            the DCR request, and other contextual information.</param>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+            <returns>A task that returns an <see cref="T:Jash.IdentityServer.Configuration.Models.IStepResult"/>, which either
+            represents that this step succeeded or failed.</returns>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.IDynamicClientRegistrationValidationResult">
+            <summary>
+            Marker interface for the result of validating a dynamic client registration request.
+            </summary>
+        </member>
+        <member name="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.IDynamicClientRegistrationValidator">
+            <summary>
+            Validates a dynamic client registration request.
+            </summary>
+        </member>
+        <member name="M:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.IDynamicClientRegistrationValidator.ValidateAsync(Jash.IdentityServer.Configuration.Models.DynamicClientRegistration.DynamicClientRegistrationContext)">
+            <summary>
+            Validates a dynamic client registration request. 
+            </summary>
+            <param name="context">Contextual information about the DCR
+            request.</param>
+            <returns>A task that returns an <see
+            cref="T:Jash.IdentityServer.Configuration.Validation.DynamicClientRegistration.IDynamicClientRegistrationValidationResult"/>, which either
+            indicates success or failure.</returns>
+        </member>
+        <member name="T:Jash.License">
+            <summary>
+            Models the license for IdentityServer.
+            </summary>
+        </member>
+        <member name="M:Jash.License.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:Jash.License.Initialize(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Initializes the license from the claims in the key.
+            </summary>
+        </member>
+        <member name="P:Jash.License.SerialNumber">
+            <summary>
+            The serial number
+            </summary>
+        </member>
+        <member name="P:Jash.License.CompanyName">
+            <summary>
+            The company name
+            </summary>
+        </member>
+        <member name="P:Jash.License.ContactInfo">
+            <summary>
+            The company contact info
+            </summary>
+        </member>
+        <member name="P:Jash.License.Expiration">
+            <summary>
+            The license expiration
+            </summary>
+        </member>
+        <member name="P:Jash.License.Edition">
+            <summary>
+            The license edition 
+            </summary>
+        </member>
+        <member name="P:Jash.License.Extras">
+            <summary>
+            Extras
+            </summary>
+        </member>
+        <member name="T:Jash.License.LicenseEdition">
+            <summary>
+            Models the license tier
+            </summary>
+        </member>
+        <member name="F:Jash.License.LicenseEdition.Enterprise">
+            <summary>
+            Enterprise
+            </summary>
+        </member>
+        <member name="F:Jash.License.LicenseEdition.Business">
+            <summary>
+            Business
+            </summary>
+        </member>
+        <member name="F:Jash.License.LicenseEdition.Starter">
+            <summary>
+            Starter
+            </summary>
+        </member>
+        <member name="F:Jash.License.LicenseEdition.Community">
+            <summary>
+            Community
+            </summary>
+        </member>
+        <member name="F:Jash.License.LicenseEdition.Bff">
+            <summary>
+            Bff
+            </summary>
+        </member>
+        <member name="M:Jash.License.ToString">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
