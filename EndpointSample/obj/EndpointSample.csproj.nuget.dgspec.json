@@ -92,7 +92,7 @@
         "projectName": "EndpointSample",
         "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\EndpointSample.csproj",
         "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\EndpointSample\\obj\\",
+        "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

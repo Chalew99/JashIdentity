@@ -89,7 +89,7 @@
         "projectName": "Jash.IdentityServer",
         "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer\\Jash.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\Jash.IdentityServer\\obj\\",
+        "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -11,7 +11,7 @@
         "projectName": "Jash.IdentityServer.EntityFramework.Storage",
         "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EntityFramework.Storage\\Jash.IdentityServer.EntityFramework.Storage.csproj",
         "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\EntityFramework.Storage\\obj\\",
+        "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EntityFramework.Storage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
