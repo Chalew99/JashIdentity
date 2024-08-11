@@ -1,16 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "wmcf6fT0Opo=",
+  "dgSpecHash": "+k8VOvlSxHU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration\\Jash.IdentityServer.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Configuration\\Jash.IdentityServer.Configuration.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\identitymodel\\7.0.0\\identitymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\8.0.3\\microsoft.aspnetcore.dataprotection.abstractions.8.0.3.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.1.2\\microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.logging\\7.1.2\\microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\minver\\4.3.0\\minver.4.3.0.nupkg.sha512"
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.0\\microsoft.identitymodel.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.0\\microsoft.identitymodel.jsonwebtokens.8.0.0.nupkg.sha512",
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.0\\microsoft.identitymodel.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.0\\microsoft.identitymodel.tokens.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

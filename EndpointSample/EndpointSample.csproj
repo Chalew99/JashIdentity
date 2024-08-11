@@ -7,12 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ConfigurationDebugViewEndpoint\**" />
+    <Content Remove="ConfigurationDebugViewEndpoint\**" />
+    <EmbeddedResource Remove="ConfigurationDebugViewEndpoint\**" />
+    <None Remove="ConfigurationDebugViewEndpoint\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\Downloads\Source\ConfigurationDebugViewEndpoint\ConfigurationDebugViewEndpoint.csproj" />
+    <ProjectReference Include="ConfigurationDebugViewEndpoint\ConfigurationDebugViewEndpoint.csproj" />
   </ItemGroup>
 
 </Project>

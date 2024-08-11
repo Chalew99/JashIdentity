@@ -1,71 +1,48 @@
+﻿// Copyright (c) Duende Software. All rights reserved.
+ 
 
-using JashAuthSample;
-using Serilog;
 
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .CreateBootstrapLogger();
+using IdentityModel.Client;
+using System.Text.Json;
 
-Log.Information("Starting up");
-
-try
+// discover endpoints from metadata
+var client = new HttpClient();
+var disco = await client.GetDiscoveryDocumentAsync("https://localhost:5001");
+if (disco.IsError)
 {
-    var builder = WebApplication.CreateBuilder(args);
-
-    builder.Host.UseSerilog((ctx, lc) => lc
-        .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level}] {SourceContext}{NewLine}{Message:lj}{NewLine}{Exception}{NewLine}")
-        .Enrich.FromLogContext()
-        .ReadFrom.Configuration(ctx.Configuration));
-
-    var app = builder
-        .ConfigureServices()
-        .ConfigurePipeline();
-
-    app.Run();
-}
-catch (Exception ex)
-{
-    Log.Fatal(ex, "Unhandled exception");
-}
-finally
-{
-    Log.Information("Shut down complete");
-    Log.CloseAndFlush();
+    Console.WriteLine(disco.Error);
+    return;
 }
 
+// request token
+var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
+{
+    Address = disco.TokenEndpoint,
+    ClientId = "client",
+    ClientSecret = "secret",
+    Scope = "api1"
+});
 
+if (tokenResponse.IsError)
+{
+    Console.WriteLine(tokenResponse.Error);
+    Console.WriteLine(tokenResponse.ErrorDescription);
+    return;
+}
 
+Console.WriteLine(tokenResponse.AccessToken);
 
-//using Jash.IdentityServer.Hosting;
+// call api
+var apiClient = new HttpClient();
+apiClient.SetBearerToken(tokenResponse.AccessToken!); // AccessToken is always non-null when IsError is false
 
-//var builder = WebApplication.CreateBuilder(args);
-
-//// Add services to the container.
-//builder.Services.AddRazorPages();
-//builder.Services.AddTransient<MyCustomMiddleware1>();
-
-//var app = builder.Build();
-
-////app.UseMiddleware<MyCustomMiddleware1>();
-////app.Run(async context => { await context.Response.WriteAsync("Run Middleware Component\n");
-////});
-
-//// Configure the HTTP request pipeline.
-//if (!app.Environment.IsDevelopment())
-//{
-//    app.UseExceptionHandler("/Error");
-//    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-//    app.UseHsts();
-//}
-
-//app.UseHttpsRedirection();
-//app.UseStaticFiles();
-
-//app.UseRouting();
-
-////app.UseAuthorization();
-
-//app.MapRazorPages();
-
-//app.Run();
-
+var response = await apiClient.GetAsync("https://localhost:6001/identity");
+if (!response.IsSuccessStatusCode)
+{
+    Console.WriteLine(response.StatusCode);
+}
+else
+{
+    var doc = JsonDocument.Parse(await response.Content.ReadAsStringAsync()).RootElement;
+    Console.WriteLine(JsonSerializer.Serialize(doc, new JsonSerializerOptions { WriteIndented = true }));
+}

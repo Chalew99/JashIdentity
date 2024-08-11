@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ayQMiJ1Z/GU=",
+  "dgSpecHash": "Ivfntf0oQig=",
   "success": true,
-  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EventsSample\\EventsSample.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\minver\\4.3.0\\minver.4.3.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EventsSample\\EventsSample.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -208,15 +208,6 @@
           }
         }
       },
-      "MinVer/4.3.0": {
-        "type": "package",
-        "build": {
-          "build/MinVer.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/MinVer.targets": {}
-        }
-      },
       "System.IdentityModel.Tokens.Jwt/7.1.2": {
         "type": "package",
         "dependencies": {
@@ -553,43 +544,6 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "MinVer/4.3.0": {
-      "sha512": "YNVAW3loCFW4kTwensApaZUl+7xREK75QQNOFSbsbXx2sCSm9/IHBjUHsJGn3u0UA5r/sAqrdYBNUlOFfLhUrA==",
-      "type": "package",
-      "path": "minver/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/MinVer.targets",
-        "buildMultiTargeting/MinVer.targets",
-        "minver.4.3.0.nupkg.sha512",
-        "minver.nuspec",
-        "minver.png",
-        "minver/net6.0/McMaster.Extensions.CommandLineUtils.dll",
-        "minver/net6.0/MinVer",
-        "minver/net6.0/MinVer.Lib.dll",
-        "minver/net6.0/MinVer.deps.json",
-        "minver/net6.0/MinVer.dll",
-        "minver/net6.0/MinVer.runtimeconfig.json",
-        "minver/net6.0/NuGet.Versioning.dll",
-        "minver/net7.0/McMaster.Extensions.CommandLineUtils.dll",
-        "minver/net7.0/MinVer",
-        "minver/net7.0/MinVer.Lib.dll",
-        "minver/net7.0/MinVer.deps.json",
-        "minver/net7.0/MinVer.dll",
-        "minver/net7.0/MinVer.runtimeconfig.json",
-        "minver/net7.0/NuGet.Versioning.dll",
-        "minver/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll",
-        "minver/netcoreapp3.1/MinVer",
-        "minver/netcoreapp3.1/MinVer.Lib.dll",
-        "minver/netcoreapp3.1/MinVer.deps.json",
-        "minver/netcoreapp3.1/MinVer.dll",
-        "minver/netcoreapp3.1/MinVer.runtimeconfig.json",
-        "minver/netcoreapp3.1/NuGet.Versioning.dll",
-        "minver/netcoreapp3.1/System.ComponentModel.Annotations.dll"
-      ]
-    },
     "System.IdentityModel.Tokens.Jwt/7.1.2": {
       "sha512": "Thhbe1peAmtSBFaV/ohtykXiZSOkx59Da44hvtWfIMFofDA3M3LaVyjstACf2rKGn4dEDR2cUpRAZ0Xs/zB+7Q==",
       "type": "package",
@@ -693,8 +647,7 @@
       "Jash.IdentityServer.Storage >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 8.0.3",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.1",
-      "MinVer >= 4.3.0"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.1"
     ]
   },
   "packageFolders": {
@@ -705,18 +658,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer\\Jash.IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer\\Jash.IdentityServer.csproj",
       "projectName": "Jash.IdentityServer",
-      "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer\\Jash.IdentityServer.csproj",
+      "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer\\Jash.IdentityServer.csproj",
       "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer\\obj\\",
+      "outputPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\Jash.IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\NuGet.Config",
         "C:\\Users\\v-chmeha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
@@ -726,6 +678,8 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -733,17 +687,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj": {
-              "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj"
+            "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj": {
+              "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer.Storage\\Jash.IdentityServer.Storage.csproj"
             }
           }
         }
       },
       "warningProperties": {
-        "allWarningsAsErrors": true,
-        "noWarn": [
-          "NU5105"
-        ],
         "warnAsError": [
           "NU1605"
         ]
@@ -769,11 +719,6 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[8.0.1, )"
-          },
-          "MinVer": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[4.3.0, )"
           }
         },
         "imports": [

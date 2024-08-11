@@ -1,8 +1,8 @@
 
 
 
-using Duende.IdentityServer.Models;
 using Jash.IdentityServer.Models;
+
 
 namespace JashAuthSample;
 

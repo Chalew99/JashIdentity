@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5yG1e4Kq6/M=",
+  "dgSpecHash": "r1IETBzxxmE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\JashAuthSample.csproj",
+  "projectFilePath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\JashAuthSample\\JashAuthSample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\v-chmeha\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\8.0.3\\microsoft.aspnetcore.authentication.openidconnect.8.0.3.nupkg.sha512",
@@ -27,7 +27,6 @@
     "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
-    "C:\\Users\\v-chmeha\\.nuget\\packages\\minver\\4.3.0\\minver.4.3.0.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\serilog.aspnetcore\\8.0.0\\serilog.aspnetcore.8.0.0.nupkg.sha512",
     "C:\\Users\\v-chmeha\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",

@@ -6,13 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Jash.IdentityServer/7.1.0-alpha.0.3": {
+      "Jash.IdentityServer/1.0.0": {
         "dependencies": {
           "Jash.IdentityServer.Storage": "1.0.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.3",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
-          "MinVer": "4.3.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
         },
         "runtime": {
           "Jash.IdentityServer.dll": {}
@@ -135,7 +134,6 @@
           }
         }
       },
-      "MinVer/4.3.0": {},
       "System.IdentityModel.Tokens.Jwt/7.1.2": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "7.1.2",
@@ -163,7 +161,7 @@
     }
   },
   "libraries": {
-    "Jash.IdentityServer/7.1.0-alpha.0.3": {
+    "Jash.IdentityServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -258,13 +256,6 @@
       "sha512": "sha512-oICJMqr3aNEDZOwnH5SK49bR6Z4aX0zEAnOLuhloumOSuqnNq+GWBdQyrgILnlcT5xj09xKCP/7Y7gJYB+ls/g==",
       "path": "microsoft.identitymodel.tokens/7.1.2",
       "hashPath": "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512"
-    },
-    "MinVer/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YNVAW3loCFW4kTwensApaZUl+7xREK75QQNOFSbsbXx2sCSm9/IHBjUHsJGn3u0UA5r/sAqrdYBNUlOFfLhUrA==",
-      "path": "minver/4.3.0",
-      "hashPath": "minver.4.3.0.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/7.1.2": {
       "type": "package",
