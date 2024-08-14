@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jash.IdentityServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eed69283bbeb485dbc28d069c4d1a75a3313c03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c62eccdd30bf276316362ea03b73d21acf2c119e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jash.IdentityServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jash.IdentityServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
