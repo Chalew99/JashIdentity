@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Migrations
 {
     public partial class InitialCreateSec : Migration
     {

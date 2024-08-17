@@ -11,9 +11,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Pages.Account
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Pages.Account
 {
     public class LoginWith2faModel : PageModel
     {

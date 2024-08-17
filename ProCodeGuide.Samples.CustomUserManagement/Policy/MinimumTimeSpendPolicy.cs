@@ -1,10 +1,10 @@
 ﻿//using System;
 //using System.Threading.Tasks;
-//using ProCodeGuide.Samples.CustomUserManagement.Policy;
+//using ClaimRoleandPolicyBasedAuthorizationDemo.Policy;
 //using Microsoft.AspNetCore.Authorization;
 //using Microsoft.Extensions.Options;
 
-//namespace ProCodeGuide.Samples.CustomUserManagement.Policy
+//namespace ClaimRoleandPolicyBasedAuthorizationDemo.Policy
 //{
 //    public class MinimumTimeSpendPolicy : IAuthorizationPolicyProvider
 //    {
@@ -35,11 +35,11 @@
 
 using System;
 using System.Threading.Tasks;
-using ProCodeGuide.Samples.CustomUserManagement.Policy;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Policy;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Policy
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Policy
 {
     public class MinimumTimeSpendPolicy : IAuthorizationPolicyProvider
     {

@@ -4,7 +4,7 @@
 using Microsoft.AspNetCore.Authorization;
 
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Policy
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Policy
 {
     public static class AuthorizationPolicies
     {

@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data;
-namespace ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Pages.Account
+using ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data;
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Pages.Account
 {
     public class LoginWithRecoveryCodeModel : PageModel
     {

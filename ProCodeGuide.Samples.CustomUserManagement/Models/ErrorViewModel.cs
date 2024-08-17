@@ -1,4 +1,4 @@
-namespace ProCodeGuide.Samples.CustomUserManagement.Models
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Models
 {
     public class ErrorViewModel
     {

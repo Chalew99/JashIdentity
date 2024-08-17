@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "ProCodeGuide.Samples.CustomUserManagement": {
+    "ClaimRoleandPolicyBasedAuthorizationDemo": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

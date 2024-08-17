@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Data;
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Data;
 
 public class ApplicationContext : IdentityDbContext<ApplicationUser>
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProCodeGuide.Samples.CustomUserManagement.Models;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Models;
 using System.Diagnostics;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Controllers
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Controllers
 {
     public class HomeController : Controller
     {

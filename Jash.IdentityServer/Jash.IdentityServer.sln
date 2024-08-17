@@ -41,7 +41,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolicyBasedAuthorization", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolicyBasedAuthorization.Integration.Tests", "..\PolicyBasedAuthorization.Integration.Tests\PolicyBasedAuthorization.Integration.Tests.csproj", "{6D857346-1667-43B5-A151-F23CC7920075}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProCodeGuide.Samples.CustomUserManagement", "..\ProCodeGuide.Samples.CustomUserManagement\ProCodeGuide.Samples.CustomUserManagement.csproj", "{8CFA7D94-2F48-4D6F-9D3E-9F5275092B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaimRoleandPolicyBasedAuthorizationDemo", "..\ProCodeGuide.Samples.CustomUserManagement\ClaimRoleandPolicyBasedAuthorizationDemo.csproj", "{8CFA7D94-2F48-4D6F-9D3E-9F5275092B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

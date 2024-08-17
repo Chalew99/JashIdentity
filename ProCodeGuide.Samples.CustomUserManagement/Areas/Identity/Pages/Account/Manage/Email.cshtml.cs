@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Pages.Account.Manage
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Pages.Account.Manage
 {
     public class EmailModel : PageModel
     {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Migrations
 {
     public partial class InitialMigration : Migration
     {

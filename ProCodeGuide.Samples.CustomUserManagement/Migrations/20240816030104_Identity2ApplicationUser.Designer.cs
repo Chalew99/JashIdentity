@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProCodeGuide.Samples.CustomUserManagement.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Data;
 
 #nullable disable
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     [Migration("20240816030104_Identity2ApplicationUser")]
@@ -158,7 +158,7 @@ namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
                     b.ToTable("UserTokens", "CstUserMngt");
                 });
 
-            modelBuilder.Entity("ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -240,7 +240,7 @@ namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -249,7 +249,7 @@ namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -264,7 +264,7 @@ namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -273,7 +273,7 @@ namespace ProCodeGuide.Samples.CustomUserManagement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

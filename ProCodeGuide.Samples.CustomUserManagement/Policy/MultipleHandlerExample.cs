@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace ProCodeGuide.Samples.CustomUserManagement.Policy
+namespace ClaimRoleandPolicyBasedAuthorizationDemo.Policy
 {
     public class PageAccessRequirement : IAuthorizationRequirement
     {

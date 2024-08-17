@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using ProCodeGuide.Samples.CustomUserManagement.Areas.Identity.Data;
-using ProCodeGuide.Samples.CustomUserManagement.Data;
-using ProCodeGuide.Samples.CustomUserManagement.InitializeTestDB;
-using ProCodeGuide.Samples.CustomUserManagement.Policy;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Areas.Identity.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Data;
+using ClaimRoleandPolicyBasedAuthorizationDemo.InitializeTestDB;
+using ClaimRoleandPolicyBasedAuthorizationDemo.Policy;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationContextConnection' not found.");
