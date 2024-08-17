@@ -118,11 +118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\Asynclocal\\Asynclocal.csproj",
+      "projectUniqueName": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Asynclocal\\Asynclocal.csproj",
       "projectName": "Asynclocal",
-      "projectPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\Asynclocal\\Asynclocal.csproj",
+      "projectPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Asynclocal\\Asynclocal.csproj",
       "packagesPath": "C:\\Users\\v-chmeha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v-chmeha\\Source\\Repos\\JashIdentity\\Asynclocal\\obj\\",
+      "outputPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Asynclocal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -185,7 +185,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

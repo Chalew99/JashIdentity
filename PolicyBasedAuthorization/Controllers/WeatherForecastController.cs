@@ -116,5 +116,13 @@ namespace PolicyBasedAuthorization.Controllers
         {
             return Ok();
         }
+
+        [HttpGet("sample08")]
+        [Authorize(Is)]
+        [SwaggerOperation(Summary = "This endpoint only to test claims based authentication")]
+        public IActionResult Get_Sample07()
+        {
+            return Ok();
+        }
     }
 }

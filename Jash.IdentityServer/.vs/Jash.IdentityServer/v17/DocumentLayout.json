@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Jash.IdentityServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8CFA7D94-2F48-4D6F-9D3E-9F5275092B7B}|..\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\procodeguide.samples.customusermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFA7D94-2F48-4D6F-9D3E-9F5275092B7B}|..\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\procodeguide.samples.customusermanagement\\procodeguide.samples.customusermanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D857346-1667-43B5-A151-F23CC7920075}|..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization.integration.tests\\policybasedauthorization.integration.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\policybasedauthorization.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\security\\authorizationpolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\authorization\\minimumageauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\authorization\\minimumagepolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36713F15-36B4-4A66-A85F-61668E91D44F}|..\\IdentityProvider\\IdentityProvider.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\identityprovider\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36713F15-36B4-4A66-A85F-61668E91D44F}|..\\IdentityProvider\\IdentityProvider.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\identityprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36713F15-36B4-4A66-A85F-61668E91D44F}|..\\IdentityProvider\\IdentityProvider.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\identityprovider\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\authorization\\minimumageauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\security\\authenticationschemes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -25,9 +49,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\security\\models\\authenticateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\authorization\\minimumagepolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\security\\apikeyorpublicresourcesauthorizationrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -58,9 +79,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D857346-1667-43B5-A151-F23CC7920075}|..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization.integration.tests\\policybasedauthorization.integration.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9FD8A7E-11D5-43CD-AA06-AD2A3DF0676B}|..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj|c:\\users\\v-chmeha\\source\\repos\\jashidentity\\policybasedauthorization\\extensions\\enumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -126,9 +144,13 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 322,
-          "SelectedChildIndex": 10,
+          "DockedHeight": 348,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
@@ -136,10 +158,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -151,7 +169,97 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\ProCodeGuide.Samples.CustomUserManagement\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ProCodeGuide.Samples.CustomUserManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\ProCodeGuide.Samples.CustomUserManagement\\Program.cs",
+              "RelativeToolTip": "..\\ProCodeGuide.Samples.CustomUserManagement\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T19:01:32.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "PolicyBasedAuthorization.csproj",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization\\PolicyBasedAuthorization.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-14T06:22:06.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthorizationPolicies.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T19:42:15.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Startup.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Startup.cs",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Startup.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T02:33:25.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAgwHAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:51:13.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProCodeGuide.Samples.CustomUserManagement",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj",
+              "RelativeDocumentMoniker": "..\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj",
+              "RelativeToolTip": "..\\ProCodeGuide.Samples.CustomUserManagement\\ProCodeGuide.Samples.CustomUserManagement.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-17T19:01:27.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MinimumAgePolicyProvider.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T02:37:32.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\appsettings.json",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\appsettings.json",
@@ -159,12 +267,24 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-13T22:54:53.275Z",
+              "WhenOpened": "2024-08-13T22:54:53.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PolicyBasedAuthorization.Integration.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
+              "RelativeToolTip": "..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T04:00:08.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Services\\UserService.cs",
@@ -172,38 +292,47 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Services\\UserService.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAADgvxsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:50:08.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T02:50:08.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthorizationPolicies.cs",
-              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
-              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
-              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
-              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\AuthorizationPolicies.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:42:15.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Startup.cs",
-              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Startup.cs",
-              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Startup.cs",
-              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Startup.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAgwBwAAABoAAAA",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\IdentityProvider\\Startup.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Startup.cs",
+              "RelativeToolTip": "..\\IdentityProvider\\Startup.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAYwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:33:25.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T01:54:55.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\IdentityProvider\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\IdentityProvider\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T01:54:35.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Program.cs",
+              "RelativeDocumentMoniker": "..\\IdentityProvider\\Program.cs",
+              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\IdentityProvider\\Program.cs",
+              "RelativeToolTip": "..\\IdentityProvider\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T01:54:49.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AuthenticationSchemes.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\AuthenticationSchemes.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\AuthenticationSchemes.cs",
@@ -211,25 +340,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\AuthenticationSchemes.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAYwA8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T02:43:32.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T02:43:32.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAkwGgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:51:13.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "MinimumAgeAuthorizeAttribute.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizeAttribute.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizeAttribute.cs",
@@ -237,12 +352,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizeAttribute.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:37:21.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T02:37:21.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "AuthenticatedUser.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\Models\\AuthenticatedUser.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\Models\\AuthenticatedUser.cs",
@@ -250,25 +364,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\Models\\AuthenticatedUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T19:50:39.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T19:50:39.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MinimumAgePolicyProvider.cs",
-              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
-              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
-              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
-              "RelativeToolTip": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgePolicyProvider.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:37:32.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "ApiKeyOrPublicResourcesAuthorizationRequirement.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\ApiKeyOrPublicResourcesAuthorizationRequirement.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\ApiKeyOrPublicResourcesAuthorizationRequirement.cs",
@@ -276,12 +376,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\ApiKeyOrPublicResourcesAuthorizationRequirement.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAUwAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T00:45:11.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T00:45:11.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "BasicAuthenticationHandler.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\BasicAuthenticationHandler.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\BasicAuthenticationHandler.cs",
@@ -294,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "BasicUser.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Models\\BasicUser.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Models\\BasicUser.cs",
@@ -302,12 +401,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Models\\BasicUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:26:18.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:26:18.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "MinimumAgeAuthorizationHandler.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizationHandler.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizationHandler.cs",
@@ -315,12 +413,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeAuthorizationHandler.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:35:10.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T02:35:10.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "MinimumAgeRequirement.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Authorization\\MinimumAgeRequirement.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeRequirement.cs",
@@ -328,12 +425,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Authorization\\MinimumAgeRequirement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:37:54.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T02:37:54.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "HasBasicAuthenticationHandler.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\HasBasicAuthenticationHandler.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\HasBasicAuthenticationHandler.cs",
@@ -341,12 +437,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\HasBasicAuthenticationHandler.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T19:57:51.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T19:57:51.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "ApiKeyAuthenticationSchemeOptions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationSchemeOptions.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationSchemeOptions.cs",
@@ -354,12 +449,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationSchemeOptions.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T15:15:30.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T15:15:30.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "HasApiKeyHandler.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\HasApiKeyHandler.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\HasApiKeyHandler.cs",
@@ -367,12 +461,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\HasApiKeyHandler.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAqwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T02:51:32.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T02:51:32.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "ApiKeyAuthenticationHandler.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationHandler.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationHandler.cs",
@@ -380,12 +473,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Security\\ApiKeyAuthenticationHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:36:56.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T02:36:56.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Models\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Models\\WeatherForecast.cs",
@@ -393,24 +485,11 @@
               "RelativeToolTip": "..\\PolicyBasedAuthorization\\Models\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T02:14:59.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T02:14:59.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PolicyBasedAuthorization.Integration.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
-              "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
-              "ToolTip": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
-              "RelativeToolTip": "..\\PolicyBasedAuthorization.Integration.Tests\\PolicyBasedAuthorization.Integration.Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-12T04:00:08.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "EnumerableExtensions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\PolicyBasedAuthorization\\Extensions\\EnumerableExtensions.cs",
               "RelativeDocumentMoniker": "..\\PolicyBasedAuthorization\\Extensions\\EnumerableExtensions.cs",
@@ -422,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "EndpointSample.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\obj\\Debug\\net8.0\\EndpointSample.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\EndpointSample\\obj\\Debug\\net8.0\\EndpointSample.AssemblyInfo.cs",
@@ -434,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "..\\EndpointSample\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
@@ -446,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "EndpointRouteBuilderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
               "RelativeDocumentMoniker": "..\\EndpointSample\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
@@ -458,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\JashAuthSample\\Config.cs",
               "RelativeDocumentMoniker": "..\\JashAuthSample\\Config.cs",
@@ -470,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "EndpointSample.csproj",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EndpointSample\\EndpointSample.csproj",
               "RelativeDocumentMoniker": "..\\EndpointSample\\EndpointSample.csproj",
@@ -478,11 +557,12 @@
               "RelativeToolTip": "..\\EndpointSample\\EndpointSample.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-09T20:46:27.803Z"
+              "WhenOpened": "2024-08-09T20:46:27.803Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "ConfigurationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\EntityFramework.Storage\\DbContexts\\ConfigurationDbContext.cs",
               "RelativeDocumentMoniker": "..\\EntityFramework.Storage\\DbContexts\\ConfigurationDbContext.cs",
@@ -494,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "DynamicClientRegistrationRequest.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\JashIdentity\\Configuration\\Models\\DynamicClientRegistration\\DynamicClientRegistrationRequest.cs",
               "RelativeDocumentMoniker": "..\\Configuration\\Models\\DynamicClientRegistration\\DynamicClientRegistrationRequest.cs",
@@ -506,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "ClientConfigurationStore.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration.EntityFramework\\ClientConfigurationStore.cs",
@@ -517,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "DynamicClientRegistrationEndpoint.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\Configuration\\Endpoints\\DynamicClientRegistrationEndpoint.cs",
@@ -528,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "EndpointSample.csproj",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\EndpointSample.csproj",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\EndpointSample.csproj",
@@ -539,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\EndpointSample\\Program.cs",
@@ -550,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Config.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Config.cs",
@@ -561,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "HostingExtensions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\HostingExtensions.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\HostingExtensions.cs",
@@ -572,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\source\\repos\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\Authentication\\OuthAuthentication_adrey\\IdentityServer\\src\\JashAuthSample\\Program.cs",
@@ -583,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "ConfigurationDebugViewMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewMiddleware.cs",
@@ -595,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "ConfigurationDebugViewOptions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewOptions.cs",
@@ -607,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "EndpointRouteBuilderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\EndpointRouteBuilderExtensions.cs",
@@ -620,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "ConfigurationDebugViewEndpoint.csproj",
               "DocumentMoniker": "C:\\Users\\v-chmeha\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Source\\ConfigurationDebugViewEndpoint\\ConfigurationDebugViewEndpoint.csproj",
@@ -633,12 +713,12 @@
           ]
         },
         {
-          "DockedHeight": 152,
+          "DockedHeight": 126,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
             },
             {
               "$type": "Bookmark",
@@ -647,6 +727,14 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         },

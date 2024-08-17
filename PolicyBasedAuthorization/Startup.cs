@@ -45,7 +45,12 @@ namespace PolicyBasedAuthorization
 				options.FallbackPolicy = AuthorizationPolicies.DefaultAccessPolicy;
 			});
 
-			services.AddControllers().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+            services.AddAuthorization(options =>
+				options.AddPolicy("Admin", policy =>
+					policy.RequireAuthenticatedUser()
+					.RequireClaim("IsAdmin", bool.TrueString)));
+
+            services.AddControllers().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
 			services.AddSwaggerGen(c =>
 			{
 				c.EnableAnnotations();
